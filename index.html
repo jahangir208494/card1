@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Card | MIS & IT</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #222;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 350px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #ffc107; /* Gold border */
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    h2 {
+      color: #000;
+      font-size: 1.7em;
+      margin-bottom: 5px;
+    }
+
+    p.title {
+      color: #555;
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+
+    .links-grid a,
+    .full-width a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(45deg, #ff9800, #ffc107);
+      color: #000;
+      padding: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .links-grid a:hover,
+    .full-width a:hover {
+      background: linear-gradient(45deg, #ffc107, #ff9800);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255, 193, 7, 0.5);
+    }
+
+    .full-width {
+      margin-top: 10px;
+    }
+
+    .full-width a {
+      width: 100%;
+    }
+
+    .qr-code {
+      margin-top: 25px;
+    }
+
+    .qr-code img {
+      width: 120px;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .qr-code img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.85em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="Img/zakariya.jpg" alt="zakariya" class="profile-img" />
+    <h2>Md.Zakaria Hossain</h2>
+    <p class="title">Assistant Manager (SAP)</p>
+
+    <!-- Buttons -->
+    <div class="links-grid">
+      <a href="tel:+8801745-599409">📞 Call</a>
+      <a href="mailto:Zakaria.hossain@hameemgroup.com">✉️ Email</a>
+      <a href="https://wa.me/+8801745-599409">💬 WhatsApp</a>
+      <a href="">💼 Profile</a>
+    </div>
+
+    <!-- Full-width -->
+    <div class="full-width">
+      <a href="https://hameemdenim.com/">🌐 Company Website</a>
+    </div>
+
+    <!-- QR Code -->
+    <div class="qr-code">
+      <a href="https://www.google.com/" target="_blank">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.google.com/" alt="QR Code" />
+      </a>
+    </div>
+
+    <footer>© 2025 Ha-Meem Group ERP Portal</footer>
+  </div>
+
+</body>
+</html>
